@@ -74,32 +74,16 @@ The counts differ because Keras enumerates pooling, activation, concatenation an
 
 ```
 ├── 3d_printed_image_classification_notebook.ipynb    # end-to-end pipeline
-├── requirements.txt
 └── README.md
 ```
 
 ## Getting started
 
-```bash
-git clone https://github.com/<user>/<repo>.git
-cd <repo>
-pip install -r requirements.txt
-```
+Open the notebook in Google Colab and run it top to bottom — no local setup required.
 
-Then run the notebook top to bottom. The dataset downloads automatically from the Hugging Face Hub on first run; the subset is written to `data/` and occupies roughly 300–450 MB as PNG.
+The datasets package installs in the first cell. everything else (TensorFlow, scikit-learn, pandas, matplotlib, seaborn) is preinstalled in the Colab runtime. The dataset downloads automatically from the Hugging Face Hub on first run, and the sampled subset is written to data/ as PNG.
 
-### Requirements
-
-```
-tensorflow<2.16
-datasets
-scikit-learn
-matplotlib
-seaborn
-numpy
-```
-
-> **Note:** the pipeline uses `ImageDataGenerator`, which was removed in Keras 3. TensorFlow 2.16 and later ship Keras 3 by default — either pin `tensorflow<2.16`, install `tf_keras`, or port the loaders to `image_dataset_from_directory`.
+A **GPU runtime** is recommended (Runtime → Change runtime type → T4 GPU)
 
 ## Limitations
 
