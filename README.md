@@ -90,6 +90,11 @@ A **GPU runtime** is recommended (Runtime → Change runtime type → T4 GPU)
 - The test set of 300 images is too small to distinguish the models statistically. McNemar's test would be the appropriate comparison, since all models are evaluated on identical images.
 - Different numbers of trainable parameters were unfrozen per architecture, so the comparison is not purely architectural.
 
+## Authors
+
+- **Yuval Shaanan** — implementation and fine-tuning of ResNet50 and DenseNet121, inference pipeline. project presentation.
+- **Amit Shraga** — implementation and fine-tuning of VGG16, cross-model comparison and evaluation. project report.
+
 
 ## Acknowledgements
 
